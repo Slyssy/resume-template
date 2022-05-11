@@ -14,7 +14,9 @@
     />
   </head>
   <body>
+    <!-- !Resume Container (2 x 2 Grid) -->
     <div class="resume-container">
+      <!-- $Header spans 2 columns on 1st row -->
       <header>
         <div class="head-shot-container">
           <img
@@ -29,7 +31,10 @@
           <h3>Account Manager</h3>
         </div>
       </header>
-      <div class="contact-education-skills">
+      <!-- !Contact, Education and Skills container (Flex-Column) Sidebar/Moves
+      !to bottom with viewport <= 768px-->
+      <!-- $Sidebar spans 2 rows on 1st column -->
+      <sidebar class="contact-education-skills">
         <div class="contact">
           <div class="subtitle">
             <h2>Contact</h2>
@@ -77,8 +82,10 @@
             <p>Microsoft Dynamics</p>
           </div>
         </div>
-      </div>
-      <div class="details">
+      </sidebar>
+      <!-- !Main details section (1 x 3 Grid) -->
+      <main class="details">
+        <!-- $Row 1 -->
         <div class="summary">
           <div class="subtitle">
             <h2>Summary</h2>
@@ -98,6 +105,7 @@
             </li>
           </ul>
         </div>
+        <!-- $Row 2 -->
         <div class="experiences">
           <div class="subtitle">
             <h2>Experiences</h2>
@@ -147,6 +155,7 @@
             </li>
           </ul>
         </div>
+        <!-- $Row 3 -->
         <div class="Awards">
           <div class="subtitle">
             <h2>AWARDS</h2>
@@ -156,7 +165,7 @@
           <h4>EMPLOYEE OF THE MONTH</h4>
           <p>December 2009, Didlier Sachs</p>
         </div>
-      </div>
+      </main>
     </div>
   </body>
 </html>

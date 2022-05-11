@@ -129,10 +129,13 @@ header {
   grid-column: 2/3;
   grid-row: 2/3;
   display: grid;
-  grid-row-gap: 1em;
+  /* grid-row-gap: em; */
   padding: 1.5em;
 }
 
+h4 {
+  font-size: 20px;
+}
 .summary {
   grid-column-start: 1;
   grid-row-start: 1;
