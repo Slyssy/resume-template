@@ -105,6 +105,7 @@ header {
   grid-row: 2/7;
   background-color: var(--linen);
   display: flex;
+  flex-direction: column;
   justify-content: space-around;
   padding: 1em;
 }
