@@ -1,0 +1,116 @@
+! CSS Reset Section from joshwcomeau.com/css/custom-css-reset *,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+#root,
+#__next {
+  isolation: isolate;
+}
+/* ! Color Variables */
+:root {
+  --lava: #4a3a2fff;
+  --black: #171717ff;
+  --gray: #b8b6b4ff;
+  --white: #f9f9f9ff;
+  --linen: #fff2e7ff;
+}
+
+.resume-container {
+  width: 816px;
+  height: 1056px;
+  display: grid;
+  grid-template-columns: repeat (12, 1fr);
+  /* grid-template-rows: repeat (20, 1fr); */
+  font-family: 'Roboto Flex';
+  margin: 0 auto;
+}
+
+header {
+  grid-column: 1/4;
+  background-color: var(--lava);
+  display: flex;
+  align-items: center;
+  padding: 0 3em;
+  gap: 3em;
+}
+
+.head-shot-container {
+  flex-basis: 25%;
+}
+
+.head-shot {
+  border-radius: 50%;
+}
+
+.name-position {
+  color: white;
+  padding-left: 2em;
+  border-left: 8px solid var(--white);
+}
+
+.name-position h1 {
+  font-size: 42pt;
+}
+
+.name-position h3 {
+  font-size: 28px;
+  font-weight: 200;
+}
+
+.contact-education-skills {
+  grid-column: 1/2;
+  grid-row: 2/6;
+  background-color: var(--linen);
+  display: flex;
+  justify-content: space-around;
+  padding: 1em;
+}
+
+.contact {
+  grid-row: 2;
+  /* display: flex;
+  flex-direction: column;
+  justify-content: space-between; */
+}
