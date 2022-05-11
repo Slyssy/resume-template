@@ -61,8 +61,9 @@ h6 {
   width: 816px;
   height: 1056px;
   display: grid;
-  grid-template-columns: repeat (12, 1fr);
-  /* grid-template-rows: repeat (20, 1fr); */
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: repeat(6, auto);
+  grid-auto-rows: minmax(min-content, max-content);
   font-family: 'Roboto Flex';
   margin: 0 auto;
 }
@@ -72,7 +73,7 @@ header {
   background-color: var(--lava);
   display: flex;
   align-items: center;
-  padding: 0 3em;
+  padding: 1em 2em;
   gap: 3em;
 }
 
@@ -101,7 +102,7 @@ header {
 
 .contact-education-skills {
   grid-column: 1/2;
-  grid-row: 2/6;
+  grid-row: 2/7;
   background-color: var(--linen);
   display: flex;
   justify-content: space-around;
