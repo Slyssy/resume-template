@@ -128,7 +128,6 @@ header {
 .details {
   grid-column: 2/3;
   grid-row: 2/5;
-  /* background-color: lightpink; */
   display: grid;
   grid-row-gap: 1em;
   padding: 1.5em;
@@ -150,4 +149,17 @@ header {
 
 .skills-text-block > p {
   line-height: 2.3em;
+}
+
+/* Medium devices (landscape tablets, 768px and below) */
+@media only screen and (max-width: 768px) {
+  .contact-education-skills {
+    grid-row: 5;
+    grid-column: span 2;
+    flex-direction: row;
+  }
+
+  .details {
+    grid-column: 1/3;
+  }
 }
