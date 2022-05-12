@@ -1,4 +1,4 @@
-! CSS Reset Section from joshwcomeau.com/css/custom-css-reset *,
+/* ! CSS Reset Section from joshwcomeau.com/css/custom-css-reset */
 *::before,
 *::after {
   box-sizing: border-box;
@@ -56,31 +56,15 @@ h6 {
   --white: #f9f9f9ff;
   --linen: #fff2e7ff;
 }
-
-.resume-container {
-  width: 816px;
-  height: 1056px;
-  display: grid;
-  grid-template-columns: 1fr 3fr;
-  /* grid-auto-rows: repeat(6, auto); */
-  /* grid-row-gap: 1em; */
-  /* grid-auto-rows: minmax(min-content, max-content); */
-  font-family: 'Roboto Flex';
-  margin: 0 auto;
-}
-
-ul {
-  padding-left: 1.5em;
-  margin-bottom: 1em;
-}
-
+/* !>>>>>>>>>>>Start Page Styles >>>>>>>>>>>>>>>>> */
+/* % Element Selectors (Alphabetical)*/
 h2 {
   font-size: 32px;
   margin-bottom: 0.5em;
 }
 
-.text-block {
-  line-height: 1.9em;
+h4 {
+  font-size: 20px;
 }
 
 header {
@@ -92,29 +76,12 @@ header {
   gap: 3em;
 }
 
-.head-shot-container {
-  flex-basis: 25%;
+ul {
+  padding-left: 1.5em;
+  margin-bottom: 1em;
 }
 
-.head-shot {
-  border-radius: 50%;
-}
-
-.name-position {
-  color: white;
-  padding-left: 2em;
-  border-left: 8px solid var(--white);
-}
-
-.name-position h1 {
-  font-size: 42pt;
-}
-
-.name-position h3 {
-  font-size: 28px;
-  font-weight: 200;
-}
-
+/* % Class Selectors (alphabetical)*/
 .contact-education-skills {
   grid-column: 1/2;
   grid-row: 2/3;
@@ -133,17 +100,41 @@ header {
   padding: 1.5em;
 }
 
-h4 {
-  font-size: 20px;
-}
-.summary {
-  grid-column-start: 1;
-  grid-row-start: 1;
-}
-
 .experiences {
   grid-column-start: 1;
   grid-row-start: 2;
+}
+
+.head-shot {
+  border-radius: 50%;
+}
+
+.head-shot-container {
+  flex-basis: 25%;
+}
+
+.name-position {
+  color: white;
+  padding-left: 2em;
+  border-left: 8px solid var(--white);
+}
+
+.name-position h1 {
+  font-size: 42pt;
+}
+
+.name-position h3 {
+  font-size: 28px;
+  font-weight: 200;
+}
+
+.resume-container {
+  width: 816px;
+  height: 1056px;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  font-family: 'Roboto Flex';
+  margin: 0 auto;
 }
 
 .school {
@@ -154,7 +145,16 @@ h4 {
   line-height: 2.3em;
 }
 
-/* Medium devices (landscape tablets, 768px and below) */
+.summary {
+  grid-column-start: 1;
+  grid-row-start: 1;
+}
+
+.text-block {
+  line-height: 1.9em;
+}
+
+/*! Medium devices (landscape tablets, 768px and below) */
 @media only screen and (max-width: 768px) {
   .contact-education-skills {
     grid-row: 5;
