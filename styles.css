@@ -157,6 +157,8 @@ h4,
   font-family: 'Roboto Flex';
   margin: 0 auto;
   border: 1px solid var(--aqua-green);
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
 }
 
 .school {
@@ -238,6 +240,7 @@ h4,
   .resume-container {
     width: 90vw;
     margin: 3em auto;
+    border: none;
   }
 
   .skills-text-block > p {
@@ -256,6 +259,14 @@ h4,
     grid-column: 2/4;
     grid-row: 2;
     padding-bottom: 2em;
+  }
+
+  .name-position h1 {
+    font-size: 20px;
+  }
+
+  .name-position h3 {
+    font-size: 16px;
   }
 
   .contact-education-skills {
